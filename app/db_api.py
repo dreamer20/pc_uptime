@@ -1,6 +1,7 @@
 from .db import get_db
 import psycopg2.extras as extras
 
+
 def get_uptime():
     db = get_db()
     cursor = db.cursor(cursor_factory=extras.DictCursor)

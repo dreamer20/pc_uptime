@@ -1,5 +1,6 @@
 from datetime import timedelta
 
+
 def totaluptimeformat(uptime: int) -> str:
     if uptime < 60:
         return 'less then minute'
