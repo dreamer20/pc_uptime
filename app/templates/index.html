@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>PC Uptime</title>
+</head>
+<body>
+    <main class="container">
+        <div class="wrapper">
+            <h1 class="title">PC Uptime</h1>
+            <div class="total-uptime">
+                {{ total_uptime }}
+            </div>
+            <div class="last-update-caption">
+                Last update:
+            </div>
+            <div class="last-update-text">
+                {{ d.strftime('%Y.%m.%d') }}  at {{ '{}:{:02}'.format(d.hour, d.minute) }} (UTC)
+            </div>
+        </div>
+    </main>
+</body>
+</html>
