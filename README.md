@@ -2,7 +2,7 @@
 
 It shows total uptime of my computer.
 
-You can find working application [here](https://uptime-81p9.onrender.com/).
+You can find working application [here](https://uptime-81p9.onrender.com/) (due to Render plan restriction first load may take a while). 
 
 Application uses Flask and PostgreSQL.
 
